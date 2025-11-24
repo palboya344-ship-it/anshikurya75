@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankur Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            color: white;
+        }
+
+        /* ---------------- VIDEO BACKGROUND ---------------- */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(70%);
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px cyan;
+        }
+
+        /* HERO SECTION */
+        #hero {
+            text-align: center;
+            padding-top: 130px;
+            padding-bottom: 120px;
+        }
+
+        #hero h1 {
+            font-size: 65px;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+            padding: 15px 40px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        #hero h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 50px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            text-shadow: 0 0 10px white;
+        }
+
+        /* PROJECT CARDS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* CONTACT ICONS */
+        .contact-icons a {
+            font-size: 40px;
+            margin: 15px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 18px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px cyan;
+        }
+    </style>
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- VIDEO -->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="sg.mp4" type="video/mp4">
+    </video>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">ANKUR</div>
+
+        <div>
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <h1>Ankur</h1>
+        <h2>Hi, I'm Ankur — A Graphic Designer</h2>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h1>My Projects</h1>
+
+        <div class="projects">
+
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+            <div class="card">Project 4</div>
+            <div class="card">Project 5</div>
+            <div class="card">Project 6</div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a dedicated graphic designer specializing in typography, posters, thumbnails and mockups.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <p>Adobe Photoshop • Adobe Illustrator • Graphic Design</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+
+        <div class="contact-icons">
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
